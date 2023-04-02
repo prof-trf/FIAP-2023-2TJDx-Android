@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "next export",
-    "deploy": "rm -rf out/ .next/ && next build && next export && touch out/.nojekyll",
+    "export": "rm -rf out/ .next/ && next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out -t true",
     "start": "next start"
   },
   "repository": {
