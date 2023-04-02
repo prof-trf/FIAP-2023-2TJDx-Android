@@ -1,0 +1,15 @@
+{
+  "index": "Introdução",
+  "another": "Outra página",
+  "advanced": "Avançada (Uma pasta)",
+  "about": {
+    "title": "Sobre",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contato ↗",
+    "type": "page",
+    "href": "https://twitter.com/fiap",
+    "newWindow": true
+  }
+}
