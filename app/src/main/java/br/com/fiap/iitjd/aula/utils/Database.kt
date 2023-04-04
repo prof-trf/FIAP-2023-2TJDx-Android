@@ -1,4 +1,4 @@
-package br.com.fiap.iitjd.aula
+package br.com.fiap.iitjd.aula.utils
 
 class Contato(val nome: String, val telefone: String)
 

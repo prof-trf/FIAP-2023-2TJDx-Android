@@ -17,6 +17,8 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.fiap.iitjd.aula.findviewbyid.FindviewbyidActivity
+import br.com.fiap.iitjd.aula.utils.Contato
+import br.com.fiap.iitjd.aula.utils.Database
 import br.com.fiap.iitjd.databinding.ActivityAulaMainBinding
 
 
@@ -30,11 +32,20 @@ class AulaMainActivity: AppCompatActivity() {
         val view = binding.root
 
         setContentView(view)
+
+        setSupportActionBar(binding.containerToolbar.toolbar)
+
+        val title = intent.getStringExtra("chave")
+        supportActionBar?.title = title
     }
 
     override fun onPostCreate(savedInstanceState: Bundle?) {
         super.onPostCreate(savedInstanceState)
         setupRecycleView()
+
+        binding.btnFechar.setOnClickListener {
+            finish()
+        }
     }
 
     private fun setupRecycleView() {
