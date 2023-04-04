@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android - 2TJD</string>
+    <string name="welcome">Bem Vindo</string>
+    <string name="access_classes">Acessar aulas</string>
+    <string name="access_project">Acessar Projeto</string>
+    <string name="fiap">FIAP</string>
+</resources>

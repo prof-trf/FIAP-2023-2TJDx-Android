@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cadet_gray">#FF83949d</color>
+    <color name="rich_black">#FF101418</color>
+    <color name="eerie_black">#FF1d2225</color>
+    <color name="claret">#FF96093c</color>
+    <color name="raspberry">#FFee0c5b</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#FF1d2225</color>
+</resources>
