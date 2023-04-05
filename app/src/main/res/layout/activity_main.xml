@@ -16,23 +16,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <include
+            android:id="@+id/container_toolbar"
+            layout="@layout/layout_toolbar"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:title="@string/fiap"
-            app:titleTextColor="@color/raspberry" />
+            app:layout_constraintTop_toTopOf="parent" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:padding="16dp"
+        android:padding="22dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout">
 
         <TextView
@@ -42,10 +43,12 @@
             android:layout_marginTop="16dp"
             android:text="@string/welcome"
             android:textColor="@color/cadet_gray"
-            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textSize="@dimen/textSizeHead"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+             />
 
         <Button
             android:id="@+id/btnAccessClasses"
@@ -55,7 +58,7 @@
             android:backgroundTint="@color/raspberry"
             android:text="@string/access_classes"
             android:textColor="@color/white"
-            app:cornerRadius="2dp"
+            app:cornerRadius="4dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -68,7 +71,7 @@
             android:backgroundTint="@color/raspberry"
             android:text="@string/access_project"
             android:textColor="@color/white"
-            app:cornerRadius="2dp"
+            app:cornerRadius="4dp"
             app:layout_constraintBottom_toTopOf="@+id/btnAccessClasses"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -82,7 +85,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@mipmap/fiap" />
+            app:srcCompat="@mipmap/fiap"
+        />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
