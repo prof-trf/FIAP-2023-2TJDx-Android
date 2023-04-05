@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.fiap.iitjd.aula.findviewbyid.FindviewbyidActivity
+import br.com.fiap.iitjd.aula.viewbinding.ViewBindingActivity
 import br.com.fiap.iitjd.databinding.ActivityAulaMainBinding
 
 
@@ -45,6 +46,7 @@ class AulaMainActivity: AppCompatActivity() {
         val aulas: ArrayList<Pair<String, Class<*>>> = arrayListOf(
             "Centralizacao componente" to FindviewbyidActivity::class.java,
             "FindViewById" to FindviewbyidActivity::class.java,
+            "ViewBinding" to ViewBindingActivity::class.java,
             "Eventos caixa de texto" to FindviewbyidActivity::class.java,
             "Eventos Botao" to FindviewbyidActivity::class.java
         )
@@ -52,7 +54,9 @@ class AulaMainActivity: AppCompatActivity() {
         val adapter = AulasRecyclerViewAdapter(aulas)
         adapter.setOnItemClickListener {
             val aula = aulas[it]
-            //startActivity(Intent(this@AulaMainActivity, aula.second))
+            startActivity(Intent(this@AulaMainActivity, aula.second))
+
+        /*
             val builder = AlertDialog.Builder(this@AulaMainActivity)
             builder.setMessage("Messagem")
                 .setPositiveButton("Ok",
@@ -64,6 +68,7 @@ class AulaMainActivity: AppCompatActivity() {
                         // acao cancelar
                     })
             builder.create().show()
+            */
         }
         binding.rcvAulas.adapter = adapter
     }
