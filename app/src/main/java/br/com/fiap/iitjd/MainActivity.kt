@@ -6,9 +6,8 @@ import android.os.Bundle
 import br.com.fiap.iitjd.aula.AulaMainActivity
 import br.com.fiap.iitjd.aula.Contato
 import br.com.fiap.iitjd.aula.Database
-import br.com.fiap.iitjd.databinding.ActivityAulaMainBinding
 import br.com.fiap.iitjd.databinding.ActivityMainBinding
-import br.com.fiap.iitjd.desafio.agenda.AgendaActivity
+import br.com.fiap.iitjd.desafio.agenda.AgendaMainActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -36,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnAccessChallenge.setOnClickListener {
-            val intent = Intent(baseContext, AgendaActivity::class.java)
+            val intent = Intent(baseContext, AgendaMainActivity::class.java)
             startActivity(intent)
         }
     }
