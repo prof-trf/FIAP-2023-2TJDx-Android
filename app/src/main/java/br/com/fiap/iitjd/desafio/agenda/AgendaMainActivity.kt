@@ -46,7 +46,7 @@ class AgendaMainActivity: AppCompatActivity() {
         }
 
         binding.btnListar.setOnClickListener {
-            val builder = AlertDialog.Builder(this) //tem que ser a activity builder.setMessage(“Messagem”)
+            val builder = AlertDialog.Builder(this) //tem que ser a activity
             builder.setMessage("Infelizmente ainda não fiz nada aqui")
 
             builder.setPositiveButton("Yep", DialogInterface.OnClickListener { dialog, id ->

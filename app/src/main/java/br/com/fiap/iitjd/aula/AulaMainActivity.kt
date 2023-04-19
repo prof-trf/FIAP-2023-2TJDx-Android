@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import br.com.fiap.iitjd.aula.findviewbyid.FindviewbyidActivity
+import br.com.fiap.iitjd.aula.listagem.ListagemActivity
 import br.com.fiap.iitjd.aula.viewbinding.ViewBindingActivity
 import br.com.fiap.iitjd.databinding.ActivityAulaMainBinding
 
@@ -45,6 +46,7 @@ class AulaMainActivity: AppCompatActivity() {
 
         val aulas: ArrayList<Pair<String, Class<*>>> = arrayListOf(
             "Centralizacao componente" to FindviewbyidActivity::class.java,
+            "Listagem" to ListagemActivity::class.java,
             "FindViewById" to FindviewbyidActivity::class.java,
             "ViewBinding" to ViewBindingActivity::class.java,
             "Eventos caixa de texto" to FindviewbyidActivity::class.java,
