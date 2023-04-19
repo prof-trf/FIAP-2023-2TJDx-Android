@@ -23,6 +23,10 @@
         <activity android:name=".MainActivity"/>
         <activity android:name=".aula.AulaMainActivity"/>
         <activity android:name=".aula.findviewbyid.FindviewbyidActivity"/>
+        <activity android:name=".desafio.DesafioActivity"/>
+        <activity android:name=".desafio.DesafioRegistrarActivity"/>
+
+        <activity android:name=".aula.recyclerview.ListagemActivity"/>
     </application>
 
 </manifest>

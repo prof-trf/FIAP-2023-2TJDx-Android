@@ -9,10 +9,9 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import br.com.fiap.iitjd.aula.AulaMainActivity
-import br.com.fiap.iitjd.aula.Contato
-import br.com.fiap.iitjd.aula.Database
 import br.com.fiap.iitjd.databinding.ActivityAulaMainBinding
 import br.com.fiap.iitjd.databinding.ActivityMainBinding
+import br.com.fiap.iitjd.desafio.DesafioActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -52,6 +51,11 @@ class MainActivity : AppCompatActivity() {
         binding.btnAccessClasses.setOnClickListener {
             val intent = Intent(baseContext, AulaMainActivity::class.java)
             intent.putExtra("chave", "valor")
+            startActivity(intent)
+        }
+
+        binding.btnChallenger.setOnClickListener {
+            val intent = Intent(baseContext, DesafioActivity::class.java)
             startActivity(intent)
         }
     }
